@@ -5,6 +5,9 @@ const dbConfig = require('./config/dbConfig');
 const userRoute = require('./routes/userRoutes');
 const transactionRoute = require('./routes/transactionsRoute');
 const requestRoute = require('./routes/requestsRoute');
+const cors = require("cors");
+
+app.use(cors());
 
 const PORT = process.env.PORT || 5000
 
